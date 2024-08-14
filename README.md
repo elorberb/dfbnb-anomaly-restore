@@ -1,8 +1,8 @@
-# 🔍 Depth-First Branch-and-Bound (DFBnB) Anomaly Detection
+# 🔍 Depth-First Branch-and-Bound (DFBnB) Anomaly Restore
 
 ## Overview
 
-This project implements the Depth-First Branch-and-Bound (DFBnB) algorithm in Python, designed to explore paths in a tree or graph to find the least costly path. The primary goal of this project is to detect and study an anomaly in the DFBnB algorithm under specific conditions, where it performs unexpectedly efficiently—running in polynomial time rather than the anticipated exponential time.
+This project implements the Depth-First Branch-and-Bound (DFBnB) algorithm in Python, designed to explore paths in a tree or graph to find the least costly path. The primary goal of this project is to restore and study an anomaly in the DFBnB algorithm under specific conditions, where it performs unexpectedly efficiently—running in polynomial time rather than the anticipated exponential time.
 
 ### 🧩 Anomaly Background
 
@@ -49,8 +49,8 @@ To run the project, ensure you have Python installed along with the following li
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/dfbnb-anomaly-detection.git
-   cd dfbnb-anomaly-detection
+   git clone https://github.com/your-username/dfbnb-anomaly-restore.git
+   cd dfbnb-anomaly-restore
    ```
 
 2. **Run the experiments**:
