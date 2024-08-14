@@ -1,10 +1,9 @@
-# dfbnb_algorithm.py
 import sqlite3
 from random import randint
 
 
 class DFBnB:
-    def __init__(self, branching_factor, depth, db_path):
+    def __init__(self, branching_factor, depth, db_path, verbose=False):
         self.bound = float('inf')
         self.optimal_path = None
         self.expanded_nodes = []
@@ -15,7 +14,7 @@ class DFBnB:
         self.start_node = 1 if self.depth else None
         self.is_goal_node = lambda node: node >= branching_factor ** depth
         self.heuristic = lambda node: 0  # Heuristic currently not used
-
+        self.verbose = verbose
         self.initialize_database()
 
     def initialize_database(self):
@@ -57,20 +56,20 @@ class DFBnB:
             INSERT INTO edges (from_node, to_node, weight) VALUES (?, ?, ?)
             ''', (node, child_node, edge_weight))
 
-    def depth_first_search_with_pruning(self, verbose=False):
+    def depth_first_search_with_pruning(self):
         """Performs a Depth-First Branch-and-Bound search using the database."""
         conn = sqlite3.connect(self.db_path)
         cursor = conn.cursor()
 
-        self._perform_search(cursor, verbose)
+        self._perform_search(cursor)
 
         conn.close()
 
-        if verbose:
+        if self.verbose:
             self.print_search_results()
         return self.optimal_path, self.expanded_nodes
 
-    def _perform_search(self, cursor, verbose):
+    def _perform_search(self, cursor):
         """Performs the recursive search for the optimal path."""
         def search(current_path, current_cost):
             current_node = current_path[-1]
@@ -78,7 +77,7 @@ class DFBnB:
             if current_node not in self.expanded_nodes:
                 self.expanded_nodes.append(current_node)
 
-            if verbose:
+            if self.verbose:
                 self._print_verbose_output(current_path, current_node, current_cost)
 
             if self._should_prune(current_node, current_cost):

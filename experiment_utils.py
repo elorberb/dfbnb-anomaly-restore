@@ -5,7 +5,7 @@ from dfbnb import DFBnB
 
 
 def run_experiments(branching_factors, depths, num_repetitions=12, db_dir='databases', output_dir='results',
-                    file_prefix='experiment'):
+                    file_prefix='experiment', verbose=False):
     """Runs the Depth-First Branch-and-Bound experiments across various branching factors and depths.
 
     Parameters:
@@ -34,7 +34,7 @@ def run_experiments(branching_factors, depths, num_repetitions=12, db_dir='datab
                 for _ in range(num_repetitions):
                     # Create unique database file path for each experiment
                     db_file = os.path.join(db_dir, f'{file_prefix}_graph_b{branching_factor}_d{depth}.db')
-                    dfbnb = DFBnB(branching_factor=branching_factor, depth=depth, db_path=db_file)
+                    dfbnb = DFBnB(branching_factor=branching_factor, depth=depth, db_path=db_file, verbose=verbose)
 
                     _, expanded_nodes = dfbnb.depth_first_search_with_pruning()
                     total_nodes_expanded += len(expanded_nodes)
