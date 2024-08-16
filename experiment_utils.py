@@ -54,7 +54,6 @@ def run_experiments(branching_factors, depths, num_repetitions=12, db_dir='datab
 
         # Save results after each depth iteration
         save_results(results_df, output_dir, file_prefix)
-        print("--- Finished ---")
 
     # Final save of results
     save_results(results_df, output_dir, file_prefix)

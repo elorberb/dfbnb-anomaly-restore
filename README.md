@@ -20,11 +20,11 @@ For more detailed information on this anomaly, refer to the provided slides "SAI
 ```plaintext
 .
 ├── README.md
-├── dfbnb.py          # Implementation of the DFBnB algorithm
-├── experiment_utils.py         # Utilities for running experiments
-├── main.py                     # Main script to execute experiments
-├── databases/                  # Directory where SQLite databases are stored
-└── results/                    # Directory where experiment results are stored
+├── dfbnb.py                       # Implementation of the DFBnB algorithm
+├── experiment_utils.py            # Utilities for running experiments
+├── main.py                        # Main script to execute experiments
+├── databases/                     # Directory where SQLite databases are stored
+└── results/                       # Directory where experiment results are stored
 ```
 
 ### 📁 Files and Directories
@@ -62,7 +62,7 @@ To run the project, ensure you have Python installed along with the following li
    This will generate databases in the `databases/` directory and save the experiment results in the `results/` directory.
 
 3. **Modify Parameters**:
-   - You can change the branching factors, depths, number of repetitions, and file handling configurations directly in the `main.py` script by modifying the parameters passed to the `run_experiments` function.
+   - You can change the branching factors, depths, number of repetitions, edge cost distributions, and file handling configurations directly in the `main.py` script by modifying the parameters passed to the `run_experiments` function.
 
 ### 📊 Understanding the Results
 
@@ -72,11 +72,29 @@ The results are saved as CSV files in the `results/` directory. Each CSV file co
 
 After running the experiments, you might find that under certain conditions (specific branching factors and depths with random edge costs), the algorithm expands significantly fewer nodes than expected, indicating the presence of the anomaly.
 
+#### **Comparing Normal Behavior to Anomalous Behavior**
+
+To thoroughly investigate the anomaly, the experiments are designed to compare normal and anomalous conditions:
+
+1. **Normal Conditions**:
+   - **Branching Factors**: `[3, 4, 5, 6, 7, 8]`
+   - **Depths**: `[6, 8, 10, 12, 14]`
+   - **Edge Costs**: Uniformly distributed between 1 and 10.
+   - **Expected Outcome**: Exponential growth in the number of nodes expanded as the tree depth increases.
+
+2. **Anomalous Conditions**:
+   - **Branching Factors**: `[3, 4, 5, 6, 7, 8]`
+   - **Depths**: `[6, 8, 10, 12, 14]`
+   - **Edge Costs**: Randomly assigned as either 0 or 1, with equal probability.
+   - **Expected Outcome**: Polynomial growth in the number of nodes expanded, significantly fewer than in normal conditions.
+
+### 📝 Interpreting the Results
+
+- **Exponential vs. Polynomial Growth**: The results will show how the algorithm's performance deviates from the expected exponential growth under normal conditions to polynomial growth under anomalous conditions.
+- **Data Visualization**: Use plots to compare the number of nodes expanded in each condition, highlighting the difference in behavior and demonstrating the presence of the anomaly.
+
 ---
 
 ### 📚 References
 
 - **"SAI-3-4.ppt"**: A presentation providing insights into the anomaly detected in the DFBnB algorithm. This file contains theoretical background and experimental evidence supporting the anomaly.
-
-
-
