@@ -1,20 +1,31 @@
 import sqlite3
-from random import randint
+from random import randint, uniform
 
 
 class DFBnB:
-    def __init__(self, branching_factor, depth, db_path, verbose=False):
+    def __init__(self, branching_factor, depth, db_path, edge_cost_distribution="zero_or_one", verbose=False):
+        """
+        Initialize the DFBnB class.
+
+        :param branching_factor: Number of children each node has.
+        :param depth: Depth of the tree.
+        :param db_path: Path to the SQLite database.
+        :param edge_cost_distribution: Distribution of edge costs.
+                                       Options: "zero_or_one", "uniform", "custom".
+        :param verbose: Boolean to control verbose output.
+        """
         self.bound = float('inf')
         self.optimal_path = None
         self.expanded_nodes = []
         self.branching_factor = branching_factor
         self.depth = depth
         self.db_path = db_path
+        self.edge_cost_distribution = edge_cost_distribution
+        self.verbose = verbose
 
         self.start_node = 1 if self.depth else None
         self.is_goal_node = lambda node: node >= branching_factor ** depth
         self.heuristic = lambda node: 0  # Heuristic currently not used
-        self.verbose = verbose
         self.initialize_database()
 
     def initialize_database(self):
@@ -51,10 +62,22 @@ class DFBnB:
         """Adds edges for a given node in the tree."""
         for branch in range(1, self.branching_factor + 1):
             child_node = (node - 1) * self.branching_factor + branch + 1
-            edge_weight = randint(0, 1)
+            edge_weight = self._generate_edge_cost()
             cursor.execute('''
             INSERT INTO edges (from_node, to_node, weight) VALUES (?, ?, ?)
             ''', (node, child_node, edge_weight))
+
+    def _generate_edge_cost(self):
+        """Generates an edge cost based on the selected distribution."""
+        if self.edge_cost_distribution == "zero_or_one":
+            return randint(0, 1)
+        elif self.edge_cost_distribution == "uniform":
+            return randint(1, 10)
+        elif self.edge_cost_distribution == "custom":
+            # Example: A custom distribution (you can define it as needed)
+            return int(uniform(1, 5))  # Adjust as necessary
+        else:
+            raise ValueError("Unsupported edge cost distribution")
 
     def depth_first_search_with_pruning(self):
         """Performs a Depth-First Branch-and-Bound search using the database."""
@@ -71,6 +94,7 @@ class DFBnB:
 
     def _perform_search(self, cursor):
         """Performs the recursive search for the optimal path."""
+
         def search(current_path, current_cost):
             current_node = current_path[-1]
 
