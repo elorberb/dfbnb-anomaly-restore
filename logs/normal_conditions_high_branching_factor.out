@@ -1,0 +1,50 @@
+Fri 16 Aug 2024 18:55:13 IDT
+
+SLURM_JOBID:		 749227
+SLURM_JOB_NODELIST:	 ise-cpu-intl-09 
+
+
+INFO:__main__:Running experiments for normal_conditions_high_branching_factor...
+INFO:experiment_utils:--- Starting the Experiment ---
+INFO:experiment_utils:Running with Depth range: range(2, 21) and Branching factors: [4, 5]
+INFO:experiment_utils:------ Depth: 2 ------
+INFO:experiment_utils:--------------------- Branching Factor: 4 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 5 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_high_branching_factor_results.csv
+INFO:experiment_utils:------ Depth: 3 ------
+INFO:experiment_utils:--------------------- Branching Factor: 4 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 5 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_high_branching_factor_results.csv
+INFO:experiment_utils:------ Depth: 4 ------
+INFO:experiment_utils:--------------------- Branching Factor: 4 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 5 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_high_branching_factor_results.csv
+INFO:experiment_utils:------ Depth: 5 ------
+INFO:experiment_utils:--------------------- Branching Factor: 4 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 5 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_high_branching_factor_results.csv
+INFO:experiment_utils:------ Depth: 6 ------
+INFO:experiment_utils:--------------------- Branching Factor: 4 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 5 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_high_branching_factor_results.csv
+INFO:experiment_utils:------ Depth: 7 ------
+INFO:experiment_utils:--------------------- Branching Factor: 4 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 5 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_high_branching_factor_results.csv
+INFO:experiment_utils:------ Depth: 8 ------
+INFO:experiment_utils:--------------------- Branching Factor: 4 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 5 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_high_branching_factor_results.csv
+INFO:experiment_utils:------ Depth: 9 ------
+INFO:experiment_utils:--------------------- Branching Factor: 4 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 5 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_high_branching_factor_results.csv
+INFO:experiment_utils:------ Depth: 10 ------
+INFO:experiment_utils:--------------------- Branching Factor: 4 ---------------------
+ERROR:experiment_utils:An error occurred: disk I/O error
+INFO:experiment_utils:Results saved to results/normal_conditions_high_branching_factor_results.csv
+     2     3      4      5      6      7   ...   15   16   17   18   19   20
+4  19.8  41.8  100.2  157.0  259.0  441.8  ...  NaN  NaN  NaN  NaN  NaN  NaN
+5  24.5  57.5   97.0  259.0  429.5  665.5  ...  NaN  NaN  NaN  NaN  NaN  NaN
+
+[2 rows x 19 columns]

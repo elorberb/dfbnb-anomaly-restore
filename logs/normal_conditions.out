@@ -1,0 +1,60 @@
+Fri 16 Aug 2024 18:48:53 IDT
+
+SLURM_JOBID:		 749223
+SLURM_JOB_NODELIST:	 cs-cpu-04 
+
+
+INFO:__main__:Running experiments for normal_conditions...
+INFO:experiment_utils:--- Starting the Experiment ---
+INFO:experiment_utils:Running with Depth range: range(2, 21) and Branching factors: [2, 3]
+INFO:experiment_utils:------ Depth: 2 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_results.csv
+INFO:experiment_utils:------ Depth: 3 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_results.csv
+INFO:experiment_utils:------ Depth: 4 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_results.csv
+INFO:experiment_utils:------ Depth: 5 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_results.csv
+INFO:experiment_utils:------ Depth: 6 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_results.csv
+INFO:experiment_utils:------ Depth: 7 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_results.csv
+INFO:experiment_utils:------ Depth: 8 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_results.csv
+INFO:experiment_utils:------ Depth: 9 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_results.csv
+INFO:experiment_utils:------ Depth: 10 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_results.csv
+INFO:experiment_utils:------ Depth: 11 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_results.csv
+INFO:experiment_utils:------ Depth: 12 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_results.csv
+INFO:experiment_utils:------ Depth: 13 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/normal_conditions_results.csv
+INFO:experiment_utils:------ Depth: 14 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------

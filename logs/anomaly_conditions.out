@@ -1,0 +1,79 @@
+Fri 16 Aug 2024 18:51:13 IDT
+
+SLURM_JOBID:		 749224
+SLURM_JOB_NODELIST:	 cs-cpu-04 
+
+
+INFO:__main__:Running experiments for anomaly_conditions...
+INFO:experiment_utils:--- Starting the Experiment ---
+INFO:experiment_utils:Running with Depth range: range(2, 21) and Branching factors: [2, 3]
+INFO:experiment_utils:------ Depth: 2 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/anomaly_conditions_results.csv
+INFO:experiment_utils:------ Depth: 3 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/anomaly_conditions_results.csv
+INFO:experiment_utils:------ Depth: 4 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/anomaly_conditions_results.csv
+INFO:experiment_utils:------ Depth: 5 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/anomaly_conditions_results.csv
+INFO:experiment_utils:------ Depth: 6 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/anomaly_conditions_results.csv
+INFO:experiment_utils:------ Depth: 7 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/anomaly_conditions_results.csv
+INFO:experiment_utils:------ Depth: 8 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/anomaly_conditions_results.csv
+INFO:experiment_utils:------ Depth: 9 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/anomaly_conditions_results.csv
+INFO:experiment_utils:------ Depth: 10 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/anomaly_conditions_results.csv
+INFO:experiment_utils:------ Depth: 11 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/anomaly_conditions_results.csv
+INFO:experiment_utils:------ Depth: 12 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/anomaly_conditions_results.csv
+INFO:experiment_utils:------ Depth: 13 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/anomaly_conditions_results.csv
+INFO:experiment_utils:------ Depth: 14 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/anomaly_conditions_results.csv
+INFO:experiment_utils:------ Depth: 15 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/anomaly_conditions_results.csv
+INFO:experiment_utils:------ Depth: 16 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+INFO:experiment_utils:Results saved to results/anomaly_conditions_results.csv
+INFO:experiment_utils:------ Depth: 17 ------
+INFO:experiment_utils:--------------------- Branching Factor: 2 ---------------------
+INFO:experiment_utils:--------------------- Branching Factor: 3 ---------------------
+ERROR:experiment_utils:An error occurred: disk I/O error
+INFO:experiment_utils:Results saved to results/anomaly_conditions_results.csv
+    2     3     4     5     6     7   ...     15     16     17   18   19   20
+2  5.4   7.4  11.2  16.6  18.6  28.8  ...  133.8  138.2  159.8  NaN  NaN  NaN
+3  8.8  14.8  16.9  23.2  27.7  32.8  ...  106.0  110.2    NaN  NaN  NaN  NaN
+
+[2 rows x 19 columns]
